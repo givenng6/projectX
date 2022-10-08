@@ -3,7 +3,6 @@ import 'package:projectx/home.dart';
 
 void main() {
   runApp(
-
       MyHomePage()
   );
 }
