@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:get/get.dart';
+import 'package:projectx/Admin/admin.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
           ElevatedButton(onPressed: () {}, child: Text('Client')),
-          ElevatedButton(onPressed: () {}, child: Text('Admin'))
+          ElevatedButton(onPressed: () => Get.to(()=>const AdminMain()), child: Text('Admin'))
           ],
           ),
         ),
